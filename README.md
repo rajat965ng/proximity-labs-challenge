@@ -43,7 +43,9 @@ mvn spring-boot:run
 ```
 
 After this you can access the application from following url:
-```http://localhost:8080/swagger-ui.html```
+```shell
+http://localhost:8080/swagger-ui.html
+```
 
 
 - Open Command Prompt and Change directory (cd) to folder containing pom.xml and run the command to run all the tests
