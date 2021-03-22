@@ -4,12 +4,12 @@ import com.proximity.app.exceptions.UploadNotSupportedException;
 
 import java.util.Collection;
 
-public interface BaseService<T> {
-    public boolean create(T t);
-    public boolean edit(T old,T updated);
-    public void delete(T t);
-    public boolean upload(T t) throws UploadNotSupportedException;
-    public T find(T t);
-    public int findIndex(T t);
-    public Collection<T> findAll();
+interface BaseService<T> {
+     boolean create(T t);
+     boolean edit(T old,T updated);
+     void delete(T t);
+     boolean upload(T t) throws UploadNotSupportedException;
+     T find(T t);
+     int findIndex(T t);
+     Collection<T> findAll();
 }

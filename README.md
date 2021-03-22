@@ -67,6 +67,12 @@ mvn test
 
 - `pom.xml` - contains all the project dependencies
 
+## Domain Info
+- Media Types: **VIDEO, WEBINAR**
+  - Controller: **MediaController**
+- Content Categories: **COURSE, SUBJECT, TAG**
+  - Controller: **ContentController**
+- User Types: **INSTRUCTOR, STUDENT**
 
 ## User Stories
 - As an instructor, I can upload a webinar. :white_check_mark:
@@ -74,9 +80,10 @@ mvn test
 - As an instructor, I can create, edit, delete subjects. :white_check_mark:
 - As an instructor, I can create, edit, delete tags. :white_check_mark:
 - As an instructor, I can upload a video. :white_check_mark:
-- As an instructor, I can add new tag while uploading video or webinar. :hourglass_flowing_sand:
-- As an instructor, I can see the most viewed videos, courses and webinars. :hourglass_flowing_sand:
+- As an instructor, I can add new tag while uploading video or webinar. :white_check_mark:
+- As an instructor, I can see the most viewed videos, courses and webinars. :white_check_mark:
 - As a student, I can see list of webinars & videos. :white_check_mark:
 - As a student, I can search webinars & videos by title. :hourglass_flowing_sand:
 - As a student, I can filter webinars & videos by course, subjects, tags. :hourglass_flowing_sand:
 - As a student, when I am playing a video or a webinar, I can get personalized suggestions of courses/webinars. :hourglass_flowing_sand:
+
