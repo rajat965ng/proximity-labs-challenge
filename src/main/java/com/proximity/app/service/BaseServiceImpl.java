@@ -24,7 +24,10 @@ public class BaseServiceImpl<T> implements BaseService<T> {
     @Override
     public boolean edit(T old, T updated) {
         int index = this.findIndex(old);
-        store.add(index,updated);
+        if (index>-1){
+            store.remove(index);
+        }
+        store.add(updated);
         return true;
     }
 
@@ -41,7 +44,9 @@ public class BaseServiceImpl<T> implements BaseService<T> {
     @Override
     public T find(T t) {
         int index =  this.findIndex(t);
-        return store.get(index);
+        if (index>-1)
+            return store.get(index);
+        return null;
     }
 
     @Override

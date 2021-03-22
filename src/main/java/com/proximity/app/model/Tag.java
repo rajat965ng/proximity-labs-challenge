@@ -15,6 +15,11 @@ public class Tag  {
         this.contents = new ArrayList<>();
     }
 
+    public Tag(String name) {
+        this.name = name;
+        this.contents = new ArrayList<>();
+    }
+
     public void add(Content content) {
         this.contents.add(content);
     }
